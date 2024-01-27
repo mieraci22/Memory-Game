@@ -1,0 +1,55 @@
+/* #game div {
+  border: 1px solid black;
+  width: 15%;
+  height: 200px;
+  margin: 10px;
+  display: inline-block;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#game {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust based on number of cards */
+  grid-gap: 10px;
+}
+
+#game div {
+  border: 1px solid black;
+  height: 150px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0; /* Hide text, if any */
+  transition: background-color 0.5s, transform 0.3s;
+}
+
+#game div.flipped, #game div.matched {
+  font-size: initial;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.score {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
