@@ -109,3 +109,6 @@ function restartGame() {
 
 document.getElementById('StartGame').addEventListener('click', startGame);
 document.getElementById('restartGame').addEventListener('click', restartGame);
+
+//Suggestions
+//Complete the implementation of the shuffle function to ensure that the cards are shuffled before the game starts.
